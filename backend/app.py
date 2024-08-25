@@ -27,6 +27,7 @@
 # if __name__ == '__main__':
 #     app.run(debug=True)
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from pymongo import MongoClient
 import requests
 from dotenv import load_dotenv
@@ -36,6 +37,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 # MongoDB connection URI
 mongo_uri = "mongodb+srv://pranaswic2023:AHXMZSKvUPinu9l8@cluster0.qpfz0ln.mongodb.net/?retryWrites=true&w=majority"

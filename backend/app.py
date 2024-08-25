@@ -40,7 +40,7 @@ app = Flask(__name__)
 CORS(app)
 
 # MongoDB connection URI
-mongo_uri = "mongodb+srv://pranaswic2023:AHXMZSKvUPinu9l8@cluster0.qpfz0ln.mongodb.net/?retryWrites=true&w=majority"
+mongo_uri = os.getenv('ATLAS_URI')
 client = MongoClient(mongo_uri)
 db = client['zomato_new']
 collection = db['restaurants_new']

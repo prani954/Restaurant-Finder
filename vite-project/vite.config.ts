@@ -11,7 +11,11 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'https://restaurantfinder2.onrender.com'
+      '/api': {
+        target: 'https://restaurantfinder2.onrender.com',
+        changeOrigin: true,
+        secure: false,
+      },
     }
   }
 })

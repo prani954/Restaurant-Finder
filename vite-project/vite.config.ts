@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://restaurantfinder2.onrender.com',
+        target: 'https://restaurantfinder3.onrender.com',
         changeOrigin: true,
         secure: false,
       },

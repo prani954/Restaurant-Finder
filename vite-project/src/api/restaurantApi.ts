@@ -28,7 +28,7 @@ const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 export const getRestaurants = async () => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/restaurants`);
+        const response = await axios.get(`${API_BASE_URL}/api/restaurants`);
         console.log('Fetched restaurants data:', response.data);
         return response.data;
     } catch (error) {
@@ -39,7 +39,7 @@ export const getRestaurants = async () => {
 
 export const getRestaurantById = async (id: string) => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/restaurant/${id}`);
+        const response = await axios.get(`${API_BASE_URL}/api/restaurant/${id}`);
         console.log('Fetched restaurant data:', response.data);
         return response.data;
     } catch (error) {

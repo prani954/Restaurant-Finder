@@ -19,7 +19,15 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ id, name, image, addres
                 <p className="restaurant-card__address">{address}</p>
                 <p className="restaurant-card__cuisines">Cuisines: {cuisines}</p>
                 <p className="restaurant-card__average-cost">Average Cost for Two: Rs. {averageCost}</p>
-                <Link to={`/restaurant/${id}`} className="restaurant-card__link">View Details</Link>
+{/*                 <Link to={`/restaurant/${id}`} className="restaurant-card__link">View Details</Link> */}
+                <a
+                    href={`/restaurant/${id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="restaurant-card__link"
+                >
+                    View Details
+                </a>
             </div>
         </div>
     );

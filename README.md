@@ -1,6 +1,7 @@
 # Restaurant Finder
 
 back-end deployed link to fetch all the restaurants : https://restaurantfinder3.onrender.com/api/restaurant
+
 front-end : http://localhost:5173
 
 ## React

@@ -1,6 +1,6 @@
 # Restaurant Finder
 
-back-end deployed link to fetch all the restaurants : https://restaurantfinder3.onrender.com/api/restaurant
+back-end deployed link to fetch all the restaurants : https://restaurantfinder3.onrender.com/api/restaurants
 
 front-end : http://localhost:5173
 
